@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#F1F1F1">
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/search_doctor"
+            app:searchIcon="@drawable/search"
+            app:queryHint="Search"
+            android:backgroundTint="#D4D4D4"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_coneradios"
+            android:layoutDirection="rtl"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcv_docter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="32dp"
+            android:layout_marginBottom="32dp"
+            android:layout_gravity="bottom|end"
+            android:tintMode="@integer/material_motion_duration_medium_1"
+            android:visibility="gone"
+            app:backgroundTint="@color/white"
+            android:src="@drawable/add_doctor" />
+    </FrameLayout>
+</LinearLayout>

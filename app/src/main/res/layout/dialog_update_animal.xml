@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F2F2F2"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tbl_booking"
+        app:title="Update animal"
+        app:titleTextColor="@color/white"
+        android:layout_gravity="center_horizontal"
+        android:background="#FFAB00" />
+
+    <LinearLayout
+        android:id="@+id/up_liner_share_animal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/up_img_anh"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/camera" />
+        <ImageView
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_album_up"
+            android:layout_gravity="center"
+            android:src="@drawable/photo_album"/>
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:paddingBottom="1dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:paddingRight="5dp"
+        android:background="@drawable/bg_coneradios"
+        app:startIconTintMode="screen"
+        app:startIconTint="@color/cardview_shadow_end_color"
+        app:startIconDrawable="@drawable/name_animal">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_marginTop="10dp"
+            android:hint="Name animal"
+            android:fontFamily="@font/solway_medium"
+            android:background="@color/white"
+            android:id="@+id/up_nameAnimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:paddingBottom="1dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:paddingRight="5dp"
+        android:background="@drawable/bg_coneradios"
+        app:startIconTintMode="screen"
+        app:startIconTint="@color/cardview_shadow_end_color"
+        app:startIconDrawable="@drawable/age">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_marginTop="10dp"
+            android:hint="Age animal"
+            android:fontFamily="@font/solway_medium"
+            android:id="@+id/up_ageAnimal"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:paddingBottom="1dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:paddingRight="5dp"
+        android:background="@drawable/bg_coneradios"
+        app:startIconTintMode="screen"
+        app:startIconTint="@color/cardview_shadow_end_color"
+        app:startIconDrawable="@drawable/species">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/up_speciesAnimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/solway_medium"
+            android:background="@color/white"
+            android:hint="Species animal" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="50dp">
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_updateAnimal"
+            android:text="Update"
+            android:textAllCaps="false"
+            android:fontFamily="@font/solway_medium"
+            android:background="@drawable/button"
+            android:backgroundTint="#ccc"
+            android:theme="@style/Theme.QuanLyPet.Button_1"
+            android:textColor="@color/black"
+            android:layout_marginRight="10dp"/>
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_cancel"
+            android:text="Cancel"
+            android:fontFamily="@font/solway_medium"
+            android:textAllCaps="false"
+            android:background="@drawable/button"
+            android:theme="@style/Theme.QuanLyPet.Button"
+            android:backgroundTint="#ccc"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+</LinearLayout>

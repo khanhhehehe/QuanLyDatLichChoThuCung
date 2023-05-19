@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dp">
+    
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <de.hdodenhof.circleimageview.CircleImageView
+           android:layout_width="60dp"
+           android:layout_height="60dp"
+           android:id="@+id/img_animal" />
+
+       <TextView
+           android:id="@+id/tv_nameAnimal"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerVertical="true"
+           android:layout_marginLeft="15dp"
+           android:layout_toLeftOf="@id/tv_typeAnimal"
+           android:layout_toRightOf="@id/img_animal"
+           android:text="Animal name"
+           android:fontFamily="@font/solway_extrabold"
+           android:textColor="@color/black"
+           android:textSize="16sp"
+           android:textStyle="normal" />
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/tv_typeAnimal"
+           android:layout_alignParentEnd="true"
+           android:layout_marginLeft="30dp"
+           android:layout_centerVertical="true"
+           android:textStyle="bold"
+           android:layout_marginRight="5dp"
+           android:textSize="12sp" />
+   </RelativeLayout>
+
+
+
+</LinearLayout>

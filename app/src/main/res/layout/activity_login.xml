@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_item_booking"
+    android:gravity="center"
+    android:padding="30dp">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/pet_shop"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/solway_extrabold"
+        android:text="Login"
+        android:layout_marginLeft="20dp"
+        android:layout_gravity="start"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/solway_regular"
+        android:layout_gravity="start"
+        android:layout_marginLeft="20dp"
+        android:text="Enter your username and password"
+        android:textColor="#696969"
+        android:textSize="11sp" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintEnabled="true"
+        android:paddingBottom="1dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:paddingRight="5dp"
+        android:background="@drawable/bg_coneradios"
+        app:startIconTintMode="screen"
+        app:startIconTint="@color/cardview_shadow_end_color"
+        app:startIconDrawable="@drawable/businessman"
+        app:boxBackgroundColor="#ffff"
+        android:layout_marginTop="20dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ed_Username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:fontFamily="@font/solway_medium"
+            android:inputType="textPersonName" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true"
+        app:hintEnabled="true"
+        android:paddingBottom="1dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:paddingRight="5dp"
+        android:background="@drawable/bg_coneradios"
+        app:startIconTintMode="screen"
+        app:startIconTint="@color/cardview_shadow_end_color"
+        app:startIconDrawable="@drawable/password"
+        app:boxBackgroundColor="#ffff"
+        android:layout_marginTop="20dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ed_Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:fontFamily="@font/solway_medium"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <CheckBox
+            android:id="@+id/ckb_nhoMK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remember"
+            android:textSize="11sp"
+            android:fontFamily="@font/solway_medium"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:id="@+id/tv_reset_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="Forgot password ?"
+            android:textColor="#FB0F0F"
+            android:textSize="12sp"
+            android:fontFamily="@font/solway_medium"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_errors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/solway_medium"
+        android:text="Lỗi tài khoản"
+        android:textColor="#FB0F0F"
+        android:textSize="12sp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#A84D4D"
+            android:background="@drawable/button"
+            android:theme="@style/Theme.QuanLyPet.Button_1"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:text="Logn In"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/solway_medium"
+            android:text="Don't have an account ?"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/tv_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/solway_medium"
+            android:layout_marginLeft="5dp"
+            android:text="Signup"
+            android:textColor="#00B0FF"
+            android:textSize="12sp" />
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/kitty"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"/>
+    </LinearLayout>
+
+</LinearLayout>
