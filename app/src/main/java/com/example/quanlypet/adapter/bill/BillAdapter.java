@@ -27,6 +27,7 @@ import com.example.quanlypet.model.UsersObj;
 import java.util.ArrayList;
 
 public class BillAdapter extends RecyclerView.Adapter<BillAdapter.BillViewHolder> implements Filterable {
+    // adapter bill
     private Context context;
     private Callback callback;
     private ArrayList<BillObj> arrayList;

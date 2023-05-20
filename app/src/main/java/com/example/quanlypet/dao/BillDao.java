@@ -10,6 +10,7 @@ import com.example.quanlypet.model.BillObj;
 import java.util.List;
 @Dao
 public interface BillDao {
+    //database bill
     @Insert
     void insertBill(BillObj object);
 
