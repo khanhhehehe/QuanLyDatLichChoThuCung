@@ -11,6 +11,7 @@ import java.util.List;
 
 @Dao
 public interface BookDao {
+    //dataase booking
     @Insert
     void insert(BookObj object);
 

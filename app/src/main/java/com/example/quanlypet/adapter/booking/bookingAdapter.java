@@ -31,6 +31,7 @@ import com.example.quanlypet.model.DoctorObj;
 import java.util.List;
 
 public class bookingAdapter extends RecyclerView.Adapter<bookingAdapter.ViewHolder> {
+    //adapter booking
     List<BookObj> list;
     Context mContext;
     private Callback callback;
