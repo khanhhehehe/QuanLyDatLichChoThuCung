@@ -43,6 +43,7 @@ public class UsersFragment extends Fragment {
 
     public static UsersFragment newInstance() {
         UsersFragment fragment = new UsersFragment();
+
         return fragment;
     }
 
@@ -55,6 +56,7 @@ public class UsersFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         return inflater.inflate(R.layout.fragment_users, container, false);
+
     }
 
     @Override
@@ -62,6 +64,7 @@ public class UsersFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         usersName = view.findViewById(R.id.usersName);
+
         lnInforAccount = view.findViewById(R.id.ln_inforAccount);
         lnAnimalManager = view.findViewById(R.id.ln_animalManager);
         lnUserManager = view.findViewById(R.id.ln_userManager);
