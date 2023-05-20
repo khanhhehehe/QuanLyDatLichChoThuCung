@@ -35,6 +35,7 @@ import java.io.ByteArrayOutputStream;
 import java.util.ArrayList;
 
 public class AnimalAdapter extends RecyclerView.Adapter<AnimalAdapter.AnimalViewHolder> implements Filterable {
+    //adapter thu cung
     private Context context;
     private Callback callback;
     private ArrayList<AnimalObj> arrayList;

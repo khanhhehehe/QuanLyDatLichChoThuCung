@@ -11,6 +11,7 @@ import com.example.quanlypet.model.AnimalObj;
 
 @Database(entities = {AnimalObj.class}, version = 1)
 public abstract class AnimalDB extends RoomDatabase {
+    //database thu cung
     public abstract AnimalDao Dao();
     public static final String DATABASENAME = "Animal.db";
     public static AnimalDB Instance;
