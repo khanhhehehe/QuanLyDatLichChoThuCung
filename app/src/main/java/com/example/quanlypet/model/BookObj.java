@@ -5,6 +5,7 @@ import androidx.room.PrimaryKey;
 
 @Entity(tableName = "Book")
 public class BookObj {
+    //booking model
     @PrimaryKey(autoGenerate = true)
     private int id;
     private int id_user;

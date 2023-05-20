@@ -34,6 +34,7 @@ import com.example.quanlypet.ui.activity.AddPatientActivity;
 import java.util.List;
 
 public class booking_admin_Adapter extends RecyclerView.Adapter<booking_admin_Adapter.ViewHolder> {
+    //booking for admin
     List<BookObj> list;
     Context mContext;
     private Callback callback;
