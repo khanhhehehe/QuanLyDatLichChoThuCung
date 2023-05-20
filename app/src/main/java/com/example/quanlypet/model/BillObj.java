@@ -5,6 +5,7 @@ import androidx.room.PrimaryKey;
 
 @Entity(tableName = "Bill")
 public class BillObj {
+    // bill model
     @PrimaryKey(autoGenerate = true)
     private int id;
     private int id_case_file;
