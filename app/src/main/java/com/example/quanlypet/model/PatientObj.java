@@ -5,6 +5,7 @@ import androidx.room.PrimaryKey;
 
 @Entity(tableName = "Patient")
 public class PatientObj {
+    //lich cho
     @PrimaryKey(autoGenerate = true)
     private int id;
     private int id_doctor;

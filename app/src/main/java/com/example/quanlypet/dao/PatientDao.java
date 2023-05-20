@@ -12,6 +12,7 @@ import java.util.List;
 
 @Dao
 public interface PatientDao {
+    //database lich cho
     @Insert
     void insert(PatientObj patientObj);
 
