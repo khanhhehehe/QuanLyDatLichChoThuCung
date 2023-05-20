@@ -7,6 +7,7 @@ import java.io.Serializable;
 
 @Entity(tableName = "Users")
 public class UsersObj implements Serializable {
+    //user model
     @PrimaryKey(autoGenerate = true)
     private int id;
     private String import_name;

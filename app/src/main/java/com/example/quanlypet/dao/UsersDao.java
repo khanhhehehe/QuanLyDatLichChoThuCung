@@ -10,6 +10,7 @@ import com.example.quanlypet.model.UsersObj;
 import java.util.List;
 @Dao
 public interface UsersDao {
+    //database user
     @Insert
     void insert(UsersObj object);
 
