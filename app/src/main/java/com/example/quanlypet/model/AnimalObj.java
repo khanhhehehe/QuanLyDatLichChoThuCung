@@ -7,6 +7,7 @@ import java.io.Serializable;
 
 @Entity(tableName = "Animal")
 public class AnimalObj implements Serializable {
+    //thu cung model
     @PrimaryKey(autoGenerate = true)
     private int id;
     private int id_users;

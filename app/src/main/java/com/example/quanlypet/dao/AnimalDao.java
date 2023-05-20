@@ -11,6 +11,7 @@ import com.example.quanlypet.model.UsersObj;
 import java.util.List;
 @Dao
 public interface AnimalDao {
+    // data thu cung
     @Insert
     void insert(AnimalObj object);
 
