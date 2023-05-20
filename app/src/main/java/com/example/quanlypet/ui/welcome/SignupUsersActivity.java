@@ -16,7 +16,7 @@ import com.google.android.material.textfield.TextInputEditText;
 public class SignupUsersActivity extends AppCompatActivity {
 
     private TextView tvExit;
-    private TextInputEditText edUsername;
+    private TextInputEditText edUsername ;
     private TextInputEditText edName;
     private TextInputEditText edEmail;
     private TextInputEditText edPhone;

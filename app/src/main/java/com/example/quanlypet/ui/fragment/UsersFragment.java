@@ -31,7 +31,7 @@ import com.example.quanlypet.ui.welcome.LoginActivity;
 import com.example.quanlypet.ui.welcome.WelcomeActivity;
 
 public class UsersFragment extends Fragment {
-    private LinearLayout lnInforAccount;
+    private LinearLayout lnInforAccount ;
     private LinearLayout lnAnimalManager;
     private LinearLayout lnUserManager;
     private LinearLayout lnChangePass;

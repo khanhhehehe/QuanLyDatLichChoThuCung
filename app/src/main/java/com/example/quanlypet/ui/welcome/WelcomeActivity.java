@@ -24,7 +24,7 @@ import me.relex.circleindicator.CircleIndicator;
 public class WelcomeActivity extends AppCompatActivity {
     private TextView tvNext;
     private ViewPager vpr;
-    private Button btnSignin;
+    private Button btnSignin ;
     private Button btnSignup;
     private CircleIndicator circleIndicator;
     private SlideAdapter slideAdapter;

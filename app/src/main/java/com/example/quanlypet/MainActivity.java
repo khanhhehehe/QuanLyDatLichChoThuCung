@@ -20,7 +20,7 @@ import androidx.viewpager2.widget.ViewPager2;
 
 public class MainActivity extends AppCompatActivity {
     private ViewPager2 viewPager2;
-    private BottomNavigationView bottomNavigationView;
+    private BottomNavigationView  ;
     private Toolbar Tbr;
 
     @Override

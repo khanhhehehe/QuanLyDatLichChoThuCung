@@ -17,7 +17,7 @@ public class SignupAdminActivity extends AppCompatActivity {
     private TextInputEditText edName;
     private TextInputEditText edEmail;
     private TextInputEditText edPassword;
-    private TextInputEditText edRePassword;
+    private TextInputEditText edRePassword ;
     private Button btnSignup;
 
     @Override

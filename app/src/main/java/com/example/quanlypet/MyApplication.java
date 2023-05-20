@@ -9,7 +9,7 @@ import android.net.Uri;
 import android.os.Build;
 
 public class MyApplication extends Application {
-    public static final String CHANNEL_ID = "CHANNEL_1";
+    public static final String CHANNEL_ID = "CHANNEL_1" ;
 
     @Override
     public void onCreate() {

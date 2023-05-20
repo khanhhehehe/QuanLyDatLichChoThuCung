@@ -27,8 +27,8 @@ public class LoginActivity extends AppCompatActivity {
     private CheckBox ckbNhoMK;
     private TextView tvSignup;
     private Button btnLogin;
-    private TextView tvResetPass;
-    private TextView tvErrors;
+    private TextView tvResetPass ;
+    private TextView tvErrors ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
