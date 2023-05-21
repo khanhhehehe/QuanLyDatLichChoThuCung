@@ -70,9 +70,11 @@ public class UsersFragment extends Fragment {
         lnUserManager = view.findViewById(R.id.ln_userManager);
         lnChangePass = view.findViewById(R.id.ln_changePass);
         lnLogOut = view.findViewById(R.id.ln_logOut);
+
         animation = AnimationUtils.loadAnimation(view.getContext(), R.anim.slide_down);
         SharedPreferences preferences = requireActivity().getSharedPreferences("Users_info", Context.MODE_PRIVATE);
         String username = preferences.getString("Username", "");
+
         if (username.equals("Admin")) {
             lnUserManager.setVisibility(View.VISIBLE);
             AdminObj adminObj = AdminDB.getInstance(getContext()).Dao().getIdAdmin(username);
@@ -86,19 +88,25 @@ public class UsersFragment extends Fragment {
         lnAnimalManager.setOnClickListener(view1 -> {
             startActivity(new Intent(getContext(), AnimalActivity.class));
         });
+
         lnInforAccount.setOnClickListener(view1 -> {
             startActivity(new Intent(getActivity(), UsersInforActivity.class));
         });
+
         lnUserManager.setOnClickListener(view1 -> {
             startActivity(new Intent(getActivity(), List_User_Activity.class));
         });
+
         lnChangePass.setOnClickListener(view1 -> {
+            //Đổi mật khẩu
             startActivity(new Intent(getContext(), ChangePasswordActivity.class));
         });
+
         lnLogOut.setOnClickListener(view1 -> {
             startActivity(new Intent(getContext(), LoginActivity.class));
             getActivity().finish();
         });
+
         lnLogOut.setAnimation(animation);
         lnChangePass.setAnimation(animation);
         lnUserManager.setAnimation(animation);
