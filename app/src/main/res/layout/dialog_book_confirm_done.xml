@@ -64,6 +64,6 @@
                 android:padding="10dp"
                 android:text="Hủy" />
         </androidx.cardview.widget.CardView>
-    </LinearLayout>
+    </LinearLayout >
 
 </RelativeLayout>

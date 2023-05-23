@@ -10,10 +10,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <androidx.appcompat.widget.Toolbar
-            android:id="@+id/id_tollBar"
+           android:id="@+id/id_tollBar"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#FFAB00" />
+            android:background="#FFAB00"  />
     </com.google.android.material.appbar.AppBarLayout>
     <LinearLayout
         android:paddingTop="20dp"

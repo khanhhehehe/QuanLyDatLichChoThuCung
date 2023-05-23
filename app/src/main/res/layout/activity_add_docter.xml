@@ -211,7 +211,7 @@
                     android:fontFamily="@font/solway_bold"
                     android:backgroundTint="#E11515"
                     android:textAllCaps="false"
-                    android:text="Thêm"/>
+                    android:text="Thêm" />
 
             </LinearLayout>
         </LinearLayout>
