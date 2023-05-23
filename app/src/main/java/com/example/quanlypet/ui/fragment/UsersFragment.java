@@ -40,41 +40,31 @@ public class UsersFragment extends Fragment {
     private Animation animation;
     public UsersFragment() {
     }
-
     public static UsersFragment newInstance() {
         UsersFragment fragment = new UsersFragment();
-
         return fragment;
     }
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
     }
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         return inflater.inflate(R.layout.fragment_users, container, false);
-
     }
-
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
         usersName = view.findViewById(R.id.usersName);
-
         lnInforAccount = view.findViewById(R.id.ln_inforAccount);
         lnAnimalManager = view.findViewById(R.id.ln_animalManager);
         lnUserManager = view.findViewById(R.id.ln_userManager);
         lnChangePass = view.findViewById(R.id.ln_changePass);
         lnLogOut = view.findViewById(R.id.ln_logOut);
-
         animation = AnimationUtils.loadAnimation(view.getContext(), R.anim.slide_down);
         SharedPreferences preferences = requireActivity().getSharedPreferences("Users_info", Context.MODE_PRIVATE);
         String username = preferences.getString("Username", "");
-
         if (username.equals("Admin")) {
             lnUserManager.setVisibility(View.VISIBLE);
             AdminObj adminObj = AdminDB.getInstance(getContext()).Dao().getIdAdmin(username);
@@ -84,41 +74,33 @@ public class UsersFragment extends Fragment {
             UsersObj usersObj = UsersDB.getInstance(getContext()).Dao().getIdUsers(username);
             usersName.setText(usersObj.getFull_name());
         }
-
         lnAnimalManager.setOnClickListener(view1 -> {
             startActivity(new Intent(getContext(), AnimalActivity.class));
         });
-
         lnInforAccount.setOnClickListener(view1 -> {
             startActivity(new Intent(getActivity(), UsersInforActivity.class));
         });
-
         lnUserManager.setOnClickListener(view1 -> {
             startActivity(new Intent(getActivity(), List_User_Activity.class));
         });
-
         lnChangePass.setOnClickListener(view1 -> {
             //Đổi mật khẩu
             startActivity(new Intent(getContext(), ChangePasswordActivity.class));
         });
-
         lnLogOut.setOnClickListener(view1 -> {
             startActivity(new Intent(getContext(), LoginActivity.class));
             getActivity().finish();
         });
-
         lnLogOut.setAnimation(animation);
         lnChangePass.setAnimation(animation);
         lnUserManager.setAnimation(animation);
         lnInforAccount.setAnimation(animation);
         lnAnimalManager.setAnimation(animation);
     }
-
     public void setAnimation(Animation animation) {
         this.animation = animation;
         notifyAll();
     }
-
     public void replaceFragmet(Fragment fragment) {
         FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
         transaction.replace(R.id.ln_inforAccount, fragment);
