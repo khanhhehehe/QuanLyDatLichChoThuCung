@@ -16,7 +16,7 @@ public interface DoctorDao {
     void insert(DoctorObj doctorObj);
 
     @Query("SELECT * FROM Doctor")
-    List<DoctorObj> getAllData();
+    List<DoctorObj> getAllData()    ;
 
     @Update
     void edit(DoctorObj doctorObj);

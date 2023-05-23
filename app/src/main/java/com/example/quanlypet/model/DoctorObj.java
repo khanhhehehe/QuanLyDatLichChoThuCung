@@ -6,8 +6,8 @@ import androidx.room.PrimaryKey;
 @Entity(tableName = "Doctor")
 public class DoctorObj {
     @PrimaryKey(autoGenerate = true)
-    private int id;
-    private String name;
+    private int id  ;
+    private String name  ;
     byte[] img;
     private String phone;
     private String email;

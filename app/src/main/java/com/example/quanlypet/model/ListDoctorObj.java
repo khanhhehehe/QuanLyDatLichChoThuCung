@@ -2,8 +2,8 @@ package com.example.quanlypet.model;
 
 public class ListDoctorObj {
     private String name;
-    private int img;
-    private String phone;
+    private int img  ;
+    private String phone  ;
 
     public ListDoctorObj() {
     }

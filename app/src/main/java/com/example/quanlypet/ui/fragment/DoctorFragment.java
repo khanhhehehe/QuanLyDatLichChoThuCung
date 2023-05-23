@@ -45,8 +45,8 @@ import java.util.ArrayList;
 
 public class DoctorFragment extends Fragment implements DoctorAdapter.Callback {
     private FloatingActionButton floatingActionButton;
-    private RecyclerView recyclerView;
-    private DoctorAdapter adapter;
+    private RecyclerView recyclerView   ;
+    private DoctorAdapter adapter   ;
     private SearchView searchDoctor;
     private ArrayList<DoctorObj> list = new ArrayList<>();
     private int checkGender;

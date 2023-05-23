@@ -36,10 +36,10 @@ import de.hdodenhof.circleimageview.CircleImageView;
 
 
 public class AddDoctorActivity extends AppCompatActivity{
-    private TextInputEditText edNameDocter;
-    private TextInputEditText edPhoneDocter;
-    private RadioButton rdoBoy;
-    private RadioButton rdoGirl;
+    private TextInputEditText edNameDocter  ;
+    private TextInputEditText edPhoneDocter  ;
+    private RadioButton rdoBoy  ;
+    private RadioButton rdoGirl  ;
     private TextInputEditText edEmailDocter;
     private TextInputEditText edAddressDocter;
     private TextInputEditText edSpecializeDocter;

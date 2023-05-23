@@ -38,8 +38,8 @@ import de.hdodenhof.circleimageview.CircleImageView;
 public class ListDoctorAdapter extends RecyclerView.Adapter<ListDoctorAdapter.DSDocterViewHolder>{
     private Context context;
     private ArrayList<DoctorObj> list;
-    private ArrayList<ListDoctorObj> listDS;
-    private ArrayList<DoctorObj> listDotor;
+    private ArrayList<ListDoctorObj> listDS   ;
+    private ArrayList<DoctorObj> listDotor  ;
 
     public void setDataDanhSach(ArrayList<ListDoctorObj> listDS){
         this.listDS=listDS;

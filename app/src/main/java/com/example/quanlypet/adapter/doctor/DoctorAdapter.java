@@ -29,9 +29,9 @@ import java.util.ArrayList;
 public class DoctorAdapter extends RecyclerView.Adapter<DoctorAdapter.DocterViewHolder> implements Filterable {
     private Context context;
     private ArrayList<DoctorObj> list;
-    private ArrayList<DoctorObj> listDotor;
+    private ArrayList<DoctorObj> listDotor   ;
     private int checkGender;
-    private DoctorObj docterObjNew;
+    private DoctorObj docterObjNew   ;
     private Callback callback;
     public void setDataDocter(ArrayList<DoctorObj> list){
         this.list=list;

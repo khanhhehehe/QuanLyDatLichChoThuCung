@@ -25,7 +25,7 @@ import com.example.quanlypet.R;
 
 
 public class DoctorInforActivity extends AppCompatActivity {
-    private TextView tvSpecializeDocter;
+    private TextView tvSpecializeDocter     ;
     private TextView tvNameDocter;
     private TextView tvPhoneDocter;
     private TextView tvAddressDocter;

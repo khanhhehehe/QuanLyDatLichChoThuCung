@@ -33,8 +33,8 @@ import java.util.ArrayList;
 public class ListDoctorActivity extends AppCompatActivity implements DoctorAdapter.Callback{
     private RecyclerView rcvDanhsachDoctor;
     private RecyclerView rcvDoctor;
-    private ArrayList<DoctorObj> list = new ArrayList<>();
-    private ArrayList<ListDoctorObj> list1 = new ArrayList<>();
+    private ArrayList<DoctorObj> list = new ArrayList<>()  ;
+    private ArrayList<ListDoctorObj> list1 = new ArrayList<>()  ;
     private ListDoctorAdapter listDoctorAdapter;
     private Toolbar idTollBar;
     private DoctorAdapter adapter;
