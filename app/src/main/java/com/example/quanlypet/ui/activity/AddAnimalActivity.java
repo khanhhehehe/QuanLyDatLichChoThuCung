@@ -40,12 +40,12 @@ public class AddAnimalActivity extends AppCompatActivity {
     private Toolbar idTollBar;
     private Bitmap bitmap;
     private Toolbar Tbr;
-    private EditText edNameAnimal;
-    private CircleImageView imgAnh;
-    private ImageView btnAlbum;
-    private EditText edAgeAnimal;
-    private EditText edSpeciesAnimal;
-    private Button btnAddAnimal;
+    private EditText edNameAnimal ;
+    private CircleImageView imgAnh ;
+    private ImageView btnAlbum ;
+    private EditText edAgeAnimal  ;
+    private EditText edSpeciesAnimal  ;
+    private Button btnAddAnimal  ;
     private UsersObj usersObj;
     private Button btnCancel;
     int REQUEST_CODE_ALBUM = 123;
