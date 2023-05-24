@@ -28,7 +28,7 @@ import java.util.ArrayList;
 
 
 public class PatientAdapter extends RecyclerView.Adapter<PatientAdapter.PatientViewHolder> {
-    // adpter lich cho
+    // adpter benh an
     private Context context;
     private ArrayList<PatientObj> list;
     private PatientObj  patientObjNew;

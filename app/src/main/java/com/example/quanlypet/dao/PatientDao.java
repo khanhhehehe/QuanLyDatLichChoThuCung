@@ -12,7 +12,7 @@ import java.util.List;
 
 @Dao
 public interface PatientDao {
-    //database lich cho
+    //database benh an
     @Insert
     void insert(PatientObj patientObj);
 

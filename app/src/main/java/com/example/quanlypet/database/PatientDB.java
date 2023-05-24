@@ -11,7 +11,7 @@ import com.example.quanlypet.model.PatientObj;
 
 @Database(entities = {PatientObj.class},version = 1)
 public abstract class PatientDB extends RoomDatabase {
-    // data lich cho
+    // data benh an
     private static final String DATABASENAME = "Patient.db";
     private static PatientDB Instance;
     public abstract PatientDao Dao();
