@@ -32,33 +32,33 @@ import java.util.List;
 
 public class bookingAdapter extends RecyclerView.Adapter<bookingAdapter.ViewHolder> {
     //adapter booking
-    List<BookObj> list;
-    Context mContext;
-    private Callback callback;
+     List<BookObj> list;
+     Context mContext;
+     private Callback callback;
 
-    public interface Callback {
+     public interface Callback {
         void update(BookObj bookObj, int index);
-    }
+     }
 
-    public bookingAdapter(Callback callback, Context mContext) {
+     public bookingAdapter(Callback callback, Context mContext) {
         this.mContext = mContext;
         this.callback = callback;
-    }
+     }
 
-    public void setDATA(List<BookObj> list) {
+     public void setDATA(List<BookObj> list) {
         this.list = list;
         notifyDataSetChanged();
-    }
+     }
 
-    @NonNull
-    @Override
-    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+     @NonNull
+     @Override
+     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_booking, parent, false);
         return new ViewHolder(view);
-    }
+     }
 
-    @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+     @Override
+     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Animation animation = AnimationUtils.loadAnimation(holder.itemView.getContext(), android.R.anim.slide_in_left);
 
         BookObj obj = list.get(position);
@@ -95,9 +95,9 @@ public class bookingAdapter extends RecyclerView.Adapter<bookingAdapter.ViewHold
         });
         holder.itemView.startAnimation(animation);
 
-    }
+      }
 
-    public void showDiaLogHuy(BookObj bookObj, int index) {
+     public void showDiaLogHuy(BookObj bookObj, int index) {
         Dialog dialog = new Dialog(mContext);
         dialog.setContentView(R.layout.dialog_cancel_book);
         dialog.getWindow().setBackgroundDrawable(mContext.getDrawable(R.drawable.bg_huy_booking));
@@ -131,7 +131,7 @@ public class bookingAdapter extends RecyclerView.Adapter<bookingAdapter.ViewHold
 
         dialog.show();
 
-    }
+     }
 
     @Override
     public int getItemCount() {

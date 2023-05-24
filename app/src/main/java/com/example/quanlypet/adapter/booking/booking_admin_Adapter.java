@@ -35,34 +35,34 @@ import java.util.List;
 
 public class booking_admin_Adapter extends RecyclerView.Adapter<booking_admin_Adapter.ViewHolder> {
     //booking for admin
-    List<BookObj> list;
-    Context mContext;
-    private Callback callback;
+     List<BookObj> list       ;
+     Context mContext     ;
+     private Callback callback   ;
 
-    public interface Callback {
+     public interface Callback {
         void updateAdmin(BookObj bookObj, int index);
-    }
+     }
 
-    public booking_admin_Adapter(List<BookObj> list, Context mContext, Callback callback) {
+      public booking_admin_Adapter(List<BookObj> list, Context mContext, Callback callback) {
         this.list = list;
         this.mContext = mContext;
         this.callback = callback;
-    }
+      }
 
-    public void setDATA(List<BookObj> list) {
+     public void setDATA(List<BookObj> list) {
         this.list = list;
         notifyDataSetChanged();
-    }
+     }
 
-    @NonNull
-    @Override
-    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+     @NonNull
+     @Override
+     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_book_admin, parent, false);
         return new ViewHolder(view);
-    }
+     }
 
-    @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+     @Override
+     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Animation animation = AnimationUtils.loadAnimation(holder.itemView.getContext(), R.anim.slide_up);
 
         BookObj obj = list.get(position);

@@ -11,13 +11,13 @@ import com.example.quanlypet.ui.fragment.BookConfirmFragment;
 import com.example.quanlypet.ui.fragment.BookDoneFragment;
 
 public class ViewPager2_Booking_Adapter extends FragmentStateAdapter {
-    public ViewPager2_Booking_Adapter(@NonNull FragmentActivity fragmentActivity) {
+     public ViewPager2_Booking_Adapter(@NonNull FragmentActivity fragmentActivity) {
         super(fragmentActivity);
-    }
+     }
 
-    @NonNull
-    @Override
-    public Fragment createFragment(int position) {
+     @NonNull
+     @Override
+     public Fragment createFragment(int position) {
         Fragment fragment =null;
         switch (position) {
             case 0:
@@ -34,10 +34,10 @@ public class ViewPager2_Booking_Adapter extends FragmentStateAdapter {
                 break;
         }
         return fragment;
-    }
+     }
 
-    @Override
-    public int getItemCount() {
+     @Override
+     public int getItemCount() {
         return 4;
     }
 }
