@@ -57,11 +57,17 @@ public class UsersFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         usersName = view.findViewById(R.id.usersName);
+
         lnInforAccount = view.findViewById(R.id.ln_inforAccount);
+
         lnAnimalManager = view.findViewById(R.id.ln_animalManager);
+
         lnUserManager = view.findViewById(R.id.ln_userManager);
+
         lnChangePass = view.findViewById(R.id.ln_changePass);
+
         lnLogOut = view.findViewById(R.id.ln_logOut);
+
         animation = AnimationUtils.loadAnimation(view.getContext(), R.anim.slide_down);
         SharedPreferences preferences = requireActivity().getSharedPreferences("Users_info", Context.MODE_PRIVATE);
         String username = preferences.getString("Username", "");
