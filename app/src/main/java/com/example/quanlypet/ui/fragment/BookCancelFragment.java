@@ -68,15 +68,25 @@ public class BookCancelFragment extends Fragment implements SwipeRefreshLayout.O
     private Button btnTiemphong;
     private Button btnPhauthuat;
     private Button btnSieuam;
+
     private Button btnSpa;
+
     List<BookObj> list;
+
     List<BookObj> list2;
+
     bookingAdapter adapter;
+
     booking_admin_Adapter adapterAdmin;
+
     RecyclerView reCy_booking;
+
     UsersObj usersObj = new UsersObj();
+
     private Spinner spnDoctor;
+
     private TextInputLayout TIPNameDoctor;
+
     private TextInputEditText TIEDNameDoctor;
     private TextInputLayout TIPPhoneNumber;
     private TextInputEditText TIEDPhoneNumber;
@@ -109,30 +119,23 @@ public class BookCancelFragment extends Fragment implements SwipeRefreshLayout.O
     List<DoctorObj> listDoctor;
     private int idDoctor;
     private SwipeRefreshLayout swipeRefreshLayout;
-
-
     public BookCancelFragment() {
     }
-
-
     public static BookCancelFragment newInstance() {
         BookCancelFragment fragment = new BookCancelFragment();
 
         return fragment;
     }
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
     }
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         return inflater.inflate(R.layout.fragment_book_cancel, container, false);
     }
-
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
