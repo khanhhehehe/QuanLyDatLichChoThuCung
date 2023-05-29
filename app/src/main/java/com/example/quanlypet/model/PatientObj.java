@@ -5,7 +5,7 @@ import androidx.room.PrimaryKey;
 
 @Entity(tableName = "Patient")
 public class PatientObj {
-    //benh an
+    //benh an model
     @PrimaryKey(autoGenerate = true)
     private int id;
     private int id_doctor;
