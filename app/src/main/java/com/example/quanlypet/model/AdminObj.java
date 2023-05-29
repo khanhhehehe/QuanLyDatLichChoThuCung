@@ -5,17 +5,17 @@ import androidx.room.PrimaryKey;
 
 @Entity(tableName = "Admin")
 public class AdminObj {
-    @PrimaryKey(autoGenerate = true)
-    private int id;
-    private String import_name;
-    private String full_name;
-    private String email;
-    private String password;
+     @PrimaryKey(autoGenerate = true)
+     private int id;
+     private String import_name;
+     private String full_name;
+     private String email;
+     private String password;
 
-    public AdminObj() {
-    }
+     public AdminObj() {
+     }
 
-    public AdminObj(String import_name, String full_name, String email, String password) {
+     public AdminObj(String import_name, String full_name, String email, String password) {
         this.import_name = import_name;
         this.full_name = full_name;
         this.email = email;
