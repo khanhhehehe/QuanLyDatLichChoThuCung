@@ -23,10 +23,10 @@ import java.util.List;
 
 public class List_User_Activity extends AppCompatActivity {
     private static final int MY_REQUESTCODE = 111;
-    RecyclerView recyclerView ;
-    List_user_Adapter adapter ;
-    private SearchView searchView;
-    List<UsersObj> list;
+    RecyclerView recyclerView    ;
+    List_user_Adapter adapter    ;
+    private SearchView searchView   ;
+    List<UsersObj> list       ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

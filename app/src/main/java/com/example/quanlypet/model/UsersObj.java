@@ -9,11 +9,11 @@ import java.io.Serializable;
 public class UsersObj implements Serializable {
     //user model
     @PrimaryKey(autoGenerate = true)
-    private int id;
-    private String import_name;
-    private String full_name;
-    private String email;
-    private String phone;
+    private int id   ;
+    private String import_name ;
+    private String full_name ;
+    private String email  ;
+    private String phone  ;
     private int gender;
     private String password;
 

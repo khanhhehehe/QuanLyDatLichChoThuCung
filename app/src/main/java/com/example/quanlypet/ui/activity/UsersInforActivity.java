@@ -20,11 +20,11 @@ import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 
 public class UsersInforActivity extends AppCompatActivity {
-    private Toolbar idTollBar;
-    private TextInputEditText edUsername;
-    private TextInputEditText edFullnameUser;
-    private TextInputEditText edEmailUsers;
-    private TextInputEditText edPhoneUsers;
+    private Toolbar idTollBar  ;
+    private TextInputEditText edUsername  ;
+    private TextInputEditText edFullnameUser   ;
+    private TextInputEditText edEmailUsers  ;
+    private TextInputEditText edPhoneUsers  ;
     private TextInputEditText edGenderUsers;
     private TextInputLayout TIPPhone;
     private TextInputLayout TIPGender;

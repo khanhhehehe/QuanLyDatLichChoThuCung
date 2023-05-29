@@ -8,7 +8,7 @@
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"     >
+        android:layout_height="wrap_content"        >
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/id_tollBar"
             android:layout_width="match_parent"
@@ -23,7 +23,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="30dp"
-        android:orientation="vertical">
+        android:orientation="vertical"        >
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -37,14 +37,14 @@
             app:boxBackgroundColor="#ffff"
             app:startIconTintMode="screen"
             app:startIconTint="@color/cardview_shadow_end_color"
-            app:startIconDrawable="@drawable/businessman">
+            app:startIconDrawable="@drawable/businessman"     >
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="User Name"
                 android:fontFamily="@font/solway_medium"
                 android:id="@+id/ed_username"
-                android:textColorHint="@color/black"/>
+                android:textColorHint="@color/black"    />
         </com.google.android.material.textfield.TextInputLayout>
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"

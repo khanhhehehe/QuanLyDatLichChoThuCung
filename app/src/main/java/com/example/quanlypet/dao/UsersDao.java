@@ -11,17 +11,17 @@ import java.util.List;
 @Dao
 public interface UsersDao {
     //database user
-    @Insert
-    void insert(UsersObj object);
+     @Insert
+     void insert(UsersObj object);
 
-    @Query("SELECT * FROM Users")
-    List<UsersObj> getAllData();
+     @Query("SELECT * FROM Users")
+     List<UsersObj> getAllData();
 
-    @Update
-    void edit(UsersObj object);
+     @Update
+     void edit(UsersObj object);
 
-    @Query("SELECT * FROM Users WHERE import_name = :user AND password = :password")
-    int checkLogin(String user, String password);
+     @Query("SELECT * FROM Users WHERE import_name = :user AND password = :password")
+     int checkLogin(String user, String password);
 
     @Query("UPDATE Users SET password = :pass WHERE import_name = :name")
     void changePass(String name, String pass);
